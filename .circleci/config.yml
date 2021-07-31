@@ -17,7 +17,7 @@ jobs:
               --application-name nginx-tutorial \
               --deployment-group-name nginx-tutorial-group \
               --deployment-config-name CodeDeployDefault.OneAtATime \
-              --github-location repository=https://github.com/anhdo95/demo-aws-code-deploy.git,commitId=4ca007a
+              --github-location repository=$CIRCLE_REPOSITORY_URL,commitId=$CIRCLE_SHA1
 
 workflows:
   version: 2
