@@ -18,6 +18,7 @@ jobs:
               --deployment-group-name nginx-tutorial-group \
               --deployment-config-name CodeDeployDefault.OneAtATime \
               --github-location repository=$CIRCLE_REPOSITORY_URL,commitId=$CIRCLE_SHA1
+              --ignore-application-stop-failures
 
 workflows:
   version: 2
